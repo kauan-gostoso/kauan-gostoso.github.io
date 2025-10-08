@@ -11,13 +11,7 @@
         text-align: center;
         flex-wrap: wrap;
       }
-      h1 {div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: myAnimation;
-  animation-duration: 4s;
-
+      h1 {
         color:purple;
      Font-size:30px;
         letter-spacing:5px;
@@ -31,6 +25,16 @@
   body {
     background-color: #800080; /* Cor roxa */
   }
+  }
+      /* aplicando animação só nessa classe */
+      .animado {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: myAnimation;
+        animation-duration: 10s;
+        animation-iteration-count:infinite; /*animação infinita*/
+      }
      @keyframes myAnimation {
       10% {background-color: puple;}
       35% {background-color: red;}
